@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSite</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css2/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        referrerpolicy="no-referrer" />
+    <script>
+        let map;
+
+        function initMap() {
+            let location = { lat: 40.577830, lng: 72.473270 };
+            let map = new google.maps.Map(document.getElementById("map"), {
+                center: location,
+                zoom: 6,
+            });
+            let marker = new google.maps.Marker({
+                position: location,
+                map: map,
+            });
+        }
+    </script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="nav-brend"><img src="./images/logo.png" alt=""></div>
+            <div class="nav-items">
+                <ul>
+                    <li class="li"><a href="#classes">CLASSES</a></li>
+                    <li class="li"><a href="#contact">CONTACT</a></li>
+                    <span>
+                        <img src="./images/flag-usa.png" alt="">
+                        <li><a class="flag" href="#">ENGLISH</a></li>
+                    </span>
+                </ul>
+            </div>
+            <div class="menu-btn">
+                <a class="open" href="#1"><img
+                        src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-128.png"
+                        alt=""></a>
+                <a class="close d-none" href="#1"><img
+                        src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-close-round-128.png" alt=""></a>
+            </div>
+        </div>
+    </nav>
+    <div class="nav-items2">
+        <ul>
+            <li class="li"><a class="link1" href="#classes">CLASSES</a></li>
+            <li class="li"><a class="link2" href="#contact">CONTACT</a></li>
+            <span>
+                <img src="./images/flag-usa.png" alt="">
+                <li><a class="link3"  class="flag" href="#">ENGLISH</a></li>
+            </span>
+        </ul>
+    </div>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="box">
+                <h1>CODE YOUR FUTURE</h1>
+                <p>"You don't have to be great to start, but you have to start to be great."</p>
+                <a href="#classes">CHECK OUT OUR CLASSES</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="classes" class="classes">
+        <div class="container">
+            <div class="title reveal">
+                <h5>SIGN UP NOW!</h5>
+                <h2>UPCOMING CLASSES</h2>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-md-4 reveal">
+                                    <img class="fsfgbgf" src="https://media.istockphoto.com/photos/software-developers-working-late-in-the-night-at-office-picture-id1129584908?k=20&m=1129584908&s=612x612&w=0&h=k7C-ZoBQUx51NUqLbPRQ4Y3Tro1a4bfxYJhpMtSQP2Y="
+                                        alt="">
+                                </div>
+                                <div class="col-md-8 reveal">
+                                    <div class="list"><a href="#">CLASSES</a></div>
+                                    <div class="name"><a href="#">Fullstack Intensive - July 5th</a></div>
+                                    <div class="flex-item">
+                                        <div class="text">
+                                            <p>Our Fullstack Intensive course is an investment into your future self.
+                                                Regardless of your current experience, skill-level or background, we can
+                                                provide you with the tools and skills you'll need to become a
+                                                contributing force to any modern technological organization.</p>
+                                        </div>
+                                        <div class="buttons">
+                                            <div class="get"><button>Get the Fullstack Curriculum</button></div>
+                                            <div class="more"><button>More Information</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-md-4 reveal">
+                                    <img class="fsfgbgf" src="https://media.istockphoto.com/photos/late-night-work-picture-id879751604?k=20&m=879751604&s=612x612&w=0&h=gsUOVp6hcNtFlltLEUIcjD344YGuz6j1sA8ZKJ0twIg="
+                                        alt="">
+                                </div>
+                                <div class="col-md-8 reveal">
+                                    <div class="list"><a href="#">CLASSES</a></div>
+                                    <div class="name"><a href="#">Python Nights for Intermediates – June 8th</a></div>
+                                    <div class="flex-item">
+                                        <div class="text">
+                                            <p>For those who already had basic knowledge of Python and are looking for
+                                                the next level to upgrade your Python skills, here it is! After
+                                                completing the intermediate course, you will be much more confident
+                                                about your backend development skills!</p>
+                                        </div>
+                                        <div class="buttons">
+                                            <div class="get"><button>Get the Fullstack Curriculum</button></div>
+                                            <div class="more"><button>More Information</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-md-4 reveal">
+                                    <img class="fsfgbgf" src="https://media.istockphoto.com/photos/website-design-developing-programming-and-coding-technologies-picture-id821824480?k=20&m=821824480&s=612x612&w=0&h=x8sVs19qzvNiwQMjSr4hona3T0o27JmkSHKsWo8cPvA="
+                                        alt="">
+                                </div>
+                                <div class="col-md-8 reveal">
+                                    <div class="list"><a href="#">CLASSES</a></div>
+                                    <div class="name"><a href="#">Python Nights for Beginners – August 10th</a></div>
+                                    <div class="flex-item">
+                                        <div class="text">
+                                            <p>If you’re interested in such fields as Big Data Analysis, Data
+                                                Visualization, Game Development, Artificial Intelligence, you are on the
+                                                right page. Backend Development may not be as visual as frontend
+                                                development, and may require a bit more math and statistical talent, but
+                                                nevertheless is a sweet place to be as a programmer.</p>
+                                        </div>
+                                        <div class="buttons">
+                                            <div class="get"><button>Get the Fullstack Curriculum</button></div>
+                                            <div class="more"><button>More Information</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" class="news">
+        <div class="container">
+            <div class="title reveal">
+                <h5>WHAT'S GOING ON?</h5>
+                <h2>NEWS</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 reveal">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://media.istockphoto.com/photos/profile-side-photo-of-concentrated-skilled-web-expert-afro-american-picture-id1218017051?k=20&m=1218017051&s=612x612&w=0&h=5jAlNN4zwt2JDE4eLRPRKYpjXitrEyoG0uT_a4h0RV8=" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">CONGRATULATIONS TO THE 2021 GRADUATES OF PYTHON INTERMEDIATE! 👏
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://media.istockphoto.com/photos/cant-do-this-all-by-myself-picture-id637854162?k=20&m=637854162&s=612x612&w=0&h=ahHfEBCVbLJJsNFie0uscg2uVdOCoNOEJnP7igi86Dc="
+                                alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">👀 INSIDE FULL-STACK INTENSIVE PROGRAM: MEET ALUMNI & INSTRUCTOR
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://media.istockphoto.com/photos/profile-side-view-portrait-of-nice-attractive-cheerful-cheery-guy-picture-id1163542051?k=20&m=1163542051&s=612x612&w=0&h=rvBgVF6fozLOH2XlkQL8xGzOAfpl7k1bxYs9azey3pY="
+                                alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">🕹️ WCODING DEMO DAY & GRADUATION CEREMONY ✨
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 reveal">
+                    <div class="card"></div>
+                </div>
+                <div class="col-md-4 reveal">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://media.istockphoto.com/photos/profile-side-view-portrait-of-nice-attractive-cheerful-cheery-guy-picture-id1163542051?k=20&m=1163542051&s=612x612&w=0&h=rvBgVF6fozLOH2XlkQL8xGzOAfpl7k1bxYs9azey3pY="
+                                alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">NOVEMBER CAREER TALK WITH WCODING FOUNDERS 🧑‍🏫
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://media.istockphoto.com/photos/cant-do-this-all-by-myself-picture-id637854162?k=20&m=637854162&s=612x612&w=0&h=ahHfEBCVbLJJsNFie0uscg2uVdOCoNOEJnP7igi86Dc="
+                                alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">WCODING HALLOWEEN BOWLING NIGHT!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://media.istockphoto.com/photos/profile-side-photo-of-concentrated-skilled-web-expert-afro-american-picture-id1218017051?k=20&m=1218017051&s=612x612&w=0&h=5jAlNN4zwt2JDE4eLRPRKYpjXitrEyoG0uT_a4h0RV8=" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">BBQ PARTY WITH WCODERS!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 reveal">
+                    <div class="card"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="title reveal">
+                <h5>A LITTLE ABOUT US.</h5>
+                <h2>{W}HY WCODING?</h2>
+                <p class="desc">We believe Korea has some of the brightest, most talented people in the world. We are
+                    only held back by old conventional thinking that stifles <b>creativity</b> and <b>innovation.</b>
+                    Effective
+                    education does not come from leaving most students behind so that we can find best and pretend that
+                    we made them great. We think all students are great, and we want to help them find that
+                    <b>potential.</b>
+                    We want Korea to be a leader in the software industry. Will you join us?
+                </p>
+            </div>
+            <div class="features-content">
+                <div class="row">
+                    <div class="features-item col-md-3 reveal">
+                        <div class="icon">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-circle fa-stack-2x" style="color: #27A9E1;"></i>
+                                <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                        <h4>We Make Programmers</h4>
+                        <p>Our world class curriculum not only gives you the technical programming skills you need to
+                            succeed, but also prepares you for the challenges of the work environment. We want you to be
+                            a star on your team.</p>
+                    </div>
+                    <div class="features-item col-md-3 reveal">
+                        <div class="icon">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-circle fa-stack-2x" style="color: #27A9E1;"></i>
+                                <i class="fas fa-star fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                        <h4>Experienced Instructors</h4>
+                        <p>All of our instructors have many years of industry experience and are excellent teachers and
+                            mentors. They not only teach you how to program, but also what it means to be a programmer.
+                        </p>
+                    </div>
+                    <div class="features-item col-md-3 reveal">
+                        <div class="icon">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-circle fa-stack-2x" style="color: #27A9E1;"></i>
+                                <i class="fas fa-users fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                        <h4>On-site Instruction</h4>
+                        <p>All of our courses have instructors onsite, making sure you have the best learning experience
+                            possible and ready adjust the material to your progress. They are there to answer your
+                            questions and make sure you are getting the most for your time.</p>
+                    </div>
+                    <div class="features-item col-md-3 reveal">
+                        <div class="icon">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-circle fa-stack-2x" style="color: #27A9E1;"></i>
+                                <i class="fas fa-dollar-sign fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                        <h4>We Help You Find a Job</h4>
+                        <p>Our curriculum provides you with the professional experience you need to beat your
+                            competition to jobs you want. We help you find employment here in Korea or abroad, with our
+                            network of employers and sources of opportunities. We can help boost your career in
+                            software.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team">
+        <div class="container">
+            <div class="title reveal">
+                <h5>THE BEST OF THE BEST!</h5>
+                <h2>OUR TEAM</h2>
+            </div>
+            <div class="row">
+                <div class="person col-md-6 reveal">
+                    <div class="person-img">
+                        <img src="https://media.istockphoto.com/photos/breaking-new-business-boundaries-with-cutting-edge-tech-picture-id1152446346?k=20&m=1152446346&s=612x612&w=0&h=SYsvjduytmqjOVQ7RUiffjO0PBBYRv8GCr0xAIUua9c="
+                            alt="">
+                    </div>
+                    <div class="person-info">
+                        <h5><a href="#">ALEX OH - CO-FOUNDER</a></h5>
+                        <p>CEO - Grok Inc, independent software consultant. Graduated Northwestern University with BA in
+                            Art Theory and Practice. Programming for 30+ years. Clients include AT&T, Verizon, KPN,
+                            Amdocs, JP Morgan, Orange Belgium, Fujitsu, Virgin Media, and Fairmont Hotels. Taught
+                            software for Hewlett-Packard, Raytheon, TRW, Goodyear. Had a boat. Sold the boat. Wants
+                            another boat.</p>
+                    </div>
+                </div>
+                <div class="person col-md-6 reveal">
+                    <div class="person-img">
+                        <img src="https://media.istockphoto.com/photos/young-businesswoman-browsing-the-web-picture-id1323473406?k=20&m=1323473406&s=612x612&w=0&h=RkbZ_iLA8tlN_rqNrL4Zu8rG4qWnf2uLvMVIjwieE_I=" alt="">
+                    </div>
+                    <div class="person-info">
+                        <h5><a href="#">KYLE KIM - CO-FOUNDER</a></h5>
+                        <p>Graduated Vrije Universiteit Brussel – Vesalius College with BA in Business Studies. Worked
+                            for Pagoda Academy Gangnam, as their TOEFL Instructor. Also taught the TOEFL Programs at
+                            Hanyang and Kunkuk University. Wrote and published the English Test Prep book, "The E^Pro
+                            Map". Likes beer, so he opened and sold a bar in Seoul; makes relatively good Gin Tonics.
+                            Loves watching movies, so he produced a short movie and submitted it to film festivals. They
+                            never called back.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="map reveal" style="padding: 20px;">
+        <div id="map" style="width: 100%; height: 400px;"></div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="title reveal">
+                <h5>GET IN TOUCH!</h5>
+                <h2>CONTACT US</h2>
+            </div>
+            <div class="row">
+                <div class="form-gr col-md-7">
+                    <div class="mb-3 reveal">
+                        <label for="Input1" class="form-label">YOUR NAME (REQUIRED)</label>
+                        <input type="text" class="form-control" id="Input1">
+                    </div>
+                    <div class="mb-3 reveal">
+                        <label for="Input2" class="form-label">YOUR EMAIL (REQUIRED)</label>
+                        <input type="email" class="form-control" id="Input2">
+                    </div>
+                    <div class="mb-3 reveal">
+                        <label for="Textarea1" class="form-label">YOUR MESSAGE</label>
+                        <textarea class="form-control" id="Textarea1" rows="7"></textarea>
+                    </div>
+                    <div class="mb-3 reveal">
+                        <span class="terms">
+                            <input type="checkbox">
+                            <span>CHECK HERE TO INDICATE THAT YOU HAVE READ AND AGREE TO THE <a href="#">PRIVACY
+                                    POLICY.</a></span>
+                        </span>
+                    </div>
+                    <div class="reveal"><button type="button" class="btn btn-primary">SEND</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 reveal">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="ifo">Contact Info</div>
+                            <div class="about">용산구 한강대로40길 39-13, 1층
+                                39-13, Hangang-daero 40-gil,
+                                1st Floor
+                                Yongsan-gu, Seoul 04382
+                                02-501-6064</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="ifo">Working Hours</div>
+                            <div class="about">Mon~Fri: 10am~10pm
+                                Sat~Sun: 2pm~8pm</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="ifo">Bank Info</div>
+                            <div class="about">2016-10-15-001
+                                IBK ㈜ 더블유코딩</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="social">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="media reveal">
+                        <h5>FOLLOW US</h5>
+                        <div class="media-icons">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-telegram"></i></a>
+                            <a href="#"><i class="fa fa-facebook-square"></i></a>
+                        </div>
+                        <div class="privacy">
+                            <h6><a href="#">Privacy Policy (개인정보처리방침)</a></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="btnToTop">
+            <a href="#hero"><i class="fa fa-angle-double-up"></i></a>
+        </div>
+        <div class="container">
+            <p>Copyright © 2020 더블유 코딩 학원 - Wcoding</p>
+        </div>
+    </footer>
+
+
+    <script src="js/bootstrap.js"></script>
+    <script src="script.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB5Z0HZaTQAm1W_oZeFEj8BzEQCpa5rpI&callback=initMap"></script>
+</body>
+
+</html>
